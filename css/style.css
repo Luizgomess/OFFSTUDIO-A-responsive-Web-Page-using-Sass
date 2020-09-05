@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#232526), to(#414345));
+  background: linear-gradient(to right, #232526, #414345);
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .nav-container {
+  padding: 20px;
+  background: #323232;
+}
+
+header .nav-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-container nav span {
+  font-family: 'Krona One', sans-serif;
+  font-weight: bolder;
+  font-size: 15pt;
+  color: #cbcbcb;
+}
+
+header .nav-container nav button {
+  padding: 0.5em;
+  width: 5rem;
+  height: 3em;
+  outline: none;
+  background-color: #7f7f7f;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 11pt;
+  font-weight: bold;
+  color: #323232;
+  cursor: pointer;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+header .nav-container nav button:hover {
+  background: #191919;
+  color: #585858;
+  -webkit-box-shadow: 5px 5px 15px 0px #414345;
+          box-shadow: 5px 5px 15px 0px #414345;
+}
+
+section {
+  padding: 20px;
+}
+
+section .cel-imagem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+
+section .cel-imagem .iphone {
+  width: 25%;
+  height: 85%;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  section .cel-imagem .iphone {
+    width: 30%;
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 879px) {
+  section .cel-imagem {
+    display: none;
+  }
+}
+
+section .app-preview {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section .app-preview .info {
+  width: 50%;
+  height: 100%;
+}
+
+section .app-preview .infodark {
+  background: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .app-preview .infodark div h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30pt;
+  color: #989898;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+section .app-preview .infodark div p {
+  width: 14em;
+  font-family: monospace;
+  color: #7f7f7f;
+}
+
+section .app-preview .infolight {
+  background: white;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .app-preview .infolight div h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30pt;
+  color: #191919;
+  margin-left: 20px;
+}
+
+section .app-preview .infolight div p {
+  width: 14em;
+  font-family: monospace;
+  color: #323232;
+  margin-bottom: 80px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+  section .app-preview .infodark, section .app-preview .infolight {
+    padding: 10px;
+  }
+  section .app-preview .infodark #title-to-mobileD, section .app-preview .infolight #title-to-mobileD {
+    margin: 0;
+  }
+  section .app-preview .infodark #paragraph-to-mobileD, section .app-preview .infolight #paragraph-to-mobileD {
+    margin: 0;
+  }
+  section .app-preview .infodark #title-to-mobileW, section .app-preview .infolight #title-to-mobileW {
+    margin: 0;
+  }
+  section .app-preview .infodark #paragraph-to-mobileW, section .app-preview .infolight #paragraph-to-mobileW {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  section .app-preview .infodark, section .app-preview .infolight {
+    padding: 10px;
+  }
+  section .app-preview .infodark #title-to-mobileD, section .app-preview .infolight #title-to-mobileD {
+    margin: 0;
+  }
+  section .app-preview .infodark #paragraph-to-mobileD, section .app-preview .infolight #paragraph-to-mobileD {
+    margin: 0;
+  }
+  section .app-preview .infodark #title-to-mobileW, section .app-preview .infolight #title-to-mobileW {
+    margin: 0;
+  }
+  section .app-preview .infodark #paragraph-to-mobileW, section .app-preview .infolight #paragraph-to-mobileW {
+    margin: 0;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+  section .app-preview .info {
+    width: 100%;
+    height: 50%;
+  }
+  section .app-preview .infolight, section .app-preview .infodark {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+section .about-it {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section .about-it .conteudo {
+  width: 80%;
+  height: 80vh;
+  margin-top: 75px;
+  margin-left: 10%;
+  position: absolute;
+}
+
+section .about-it .conteudo #about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  background: white;
+  -webkit-box-shadow: 5px 5px 15px 2px #323232;
+          box-shadow: 5px 5px 15px 2px #323232;
+  color: #323232;
+}
+
+section .about-it .conteudo #about h1 {
+  font-family: helvetica,sans-serif;
+  font-size: 30pt;
+  padding-bottom: 30px;
+  float: left;
+}
+
+section .about-it .conteudo #about p {
+  font-family: monospace;
+  font-size: 13pt;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+section .about-it .conteudo #about ul {
+  list-style: none;
+  font-family: helvetica,sans-serif;
+}
+
+section .about-it .conteudo #about ul li {
+  display: inline-block;
+  font-weight: bold;
+  padding: 50px;
+  -webkit-transition: linear .3s;
+  transition: linear .3s;
+}
+
+section .about-it .conteudo #about ul li:hover {
+  color: #b2b2b2;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section .about-it .dark-bar {
+  width: 20%;
+  background: #191919;
+  height: 100vh;
+}
+
+section .about-it .light-anounce {
+  width: 80%;
+  background: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+  section .about-it #about {
+    width: 80%;
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  section .about-it .conteudo {
+    margin: -90px auto auto 90px;
+  }
+  section .about-it .conteudo #about {
+    width: 90%;
+    height: 80vh;
+    margin-top: 150px;
+    padding: 5%;
+  }
+  section .about-it .conteudo #about ul li {
+    display: block;
+    padding: 5px;
+  }
+  section .about-it .dark-bar {
+    width: 100%;
+  }
+  section .about-it .light-anounce {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  section .about-it .conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  section .about-it .conteudo #about {
+    background: #191919;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    height: 100vh;
+  }
+  section .about-it .conteudo #about h1 {
+    color: #999999;
+  }
+  section .about-it .conteudo #about p {
+    color: #b3b3b3;
+  }
+  section .about-it .conteudo #about ul {
+    color: #b3b3b3;
+  }
+  section .about-it .conteudo #about ul li {
+    display: block;
+    padding: 15px;
+  }
+  section .about-it .conteudo #about ul li:hover {
+    color: white;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  section .about-it .light-anounce {
+    display: none;
+  }
+  section .about-it .dark-bar {
+    display: none;
+  }
+}
+
+section .contact-us {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section .contact-us .dark-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #191919;
+  color: #ffffff;
+  text-align: center;
+}
+
+section .contact-us .dark-side h1 {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 55pt;
+}
+
+section .contact-us .dark-side p {
+  font-family: monospace;
+  padding-bottom: 20px;
+}
+
+section .contact-us .dark-side input {
+  width: 70%;
+  height: 50px;
+  outline: none;
+  font-size: 20pt;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 10px;
+  -webkit-transition: linear .3s;
+  transition: linear .3s;
+}
+
+section .contact-us .dark-side input:focus {
+  border: 2px solid #4c4c4c;
+}
+
+section .contact-us .dark-side button {
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  outline: none;
+  padding: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 400px;
+}
+
+footer .light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  width: 50%;
+  height: 10vh;
+  background: #ffffff;
+}
+
+footer .light i {
+  font-size: 20pt;
+  -webkit-transition: linear .2s;
+  transition: linear .2s;
+}
+
+footer .light i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer .dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  width: 50%;
+  height: 10vh;
+  background: #191919;
+}
+
+footer .dark i {
+  font-size: 20pt;
+  color: white;
+  -webkit-transition: linear .2s;
+  transition: linear .2s;
+}
+
+footer .dark i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (max-width: 444px) {
+  i {
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
