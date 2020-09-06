@@ -1,2 +1,2 @@
 # Responsive-Web-Page-using-Sass
-my first projetc using Sass 
+my first project using Sass 
